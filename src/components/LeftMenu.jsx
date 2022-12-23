@@ -5,6 +5,7 @@ import { BiSearchAlt } from "react-icons/bi";
 import { MenuList } from "./MenuList";
 import Menu from "./Menu";
 import MenuPlayList from "./MenuPlaylist";
+import TrackList from "./TrackList";
 
 const LeftMenu = () => {
   return (
@@ -32,6 +33,7 @@ const LeftMenu = () => {
 
       <Menu title={"Menu"} menuObject={MenuList} />
       <MenuPlayList />
+      <TrackList/>
     </div>
   );
 };

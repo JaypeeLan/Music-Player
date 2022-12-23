@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f1f1f1;
+  color: var(--off-white);
 }
 
 .logoContainer .logo {
@@ -234,6 +234,7 @@
   margin-left: auto;
 }
 
+/* =================== TRACTLIST COMPONENT ======================== */
 .trackList {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: 10px;
@@ -303,7 +304,7 @@
   content: "";
   top: 0;
   left: 0;
-  background: #49e12e;
+  background: var(--light-green);
   width: 50%;
   height: 100%;
   z-index: 2;
@@ -330,13 +331,64 @@
   z-index: 3;
   box-sizing: border-box;
   transition: all 250ms linear;
-  background: #f1f1f1;
+  background: var(--off-white);
   border-radius: var(--border-radius-large);
   -webkit-border-radius: var(--border-radius-large);
   -moz-border-radius: var(--border-radius-large);
   -ms-border-radius: var(--border-radius-large);
   -o-border-radius: var(--border-radius-large);
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
 }
+
+/* for firefox */
+.trackList .bottom input::-moz-progress-bar {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: var(--light-green);
+  width: 50%;
+  height: 100%;
+  z-index: 2;
+  transition: width 250ms linear;
+  border-radius: var(--border-radius-large);
+  -webkit-border-radius: var(--border-radius-large);
+  -moz-border-radius: var(--border-radius-large);
+  -ms-border-radius: var(--border-radius-large);
+  -o-border-radius: var(--border-radius-large);
+  -webkit-transition: width 250ms linear;
+  -moz-transition: width 250ms linear;
+  -ms-transition: width 250ms linear;
+  -o-transition: width 250ms linear;
+}
+
+.trackList .bottom input::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 10px;
+  height: 20px;
+  border: 2px solid #000;
+  cursor: pointer;
+  position: relative;
+  margin: -2px 0 0 0;
+  z-index: 3;
+  box-sizing: border-box;
+  transition: all 250ms linear;
+  background: var(--off-white);
+  border-radius: var(--border-radius-large);
+  -webkit-border-radius: var(--border-radius-large);
+  -moz-border-radius: var(--border-radius-large);
+  -ms-border-radius: var(--border-radius-large);
+  -o-border-radius: var(--border-radius-large);
+  -webkit-transition: all 250ms linear;
+  -moz-transition: all 250ms linear;
+  -ms-transition: all 250ms linear;
+  -o-transition: all 250ms linear;
+}
+
+/* ===================================================== */
 
 @media screen and (max-width: 550px) {
   .leftMenu {
