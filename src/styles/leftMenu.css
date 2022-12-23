@@ -43,11 +43,11 @@
   margin-top: 20px;
   color: var(--dark-grey);
   overflow: hidden;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: var(--border-radius-large);
+  -webkit-border-radius: var(--border-radius-large);
+  -moz-border-radius: var(--border-radius-large);
+  -ms-border-radius: var(--border-radius-large);
+  -o-border-radius: var(--border-radius-large);
 }
 
 /* ---search input bar */
@@ -108,7 +108,6 @@
 }
 
 .menuContainer ul li a {
-  text-decoration: none;
   color: var(--dark-grey);
   display: flex;
   align-items: center;
@@ -128,11 +127,11 @@
   width: 0px;
   height: 100%;
   background: var(--light-green);
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  border-radius: var(--border-radius-small);
+  -webkit-border-radius: var(--border-radius-small);
+  -moz-border-radius: var(--border-radius-small);
+  -ms-border-radius: var(--border-radius-small);
+  -o-border-radius: var(--border-radius-small);
 }
 
 .menuContainer ul li:hover a,
@@ -396,18 +395,9 @@
     width: 64px;
   }
 
-  .leftMenu .searchBox {
-    display: none;
-  }
-
-  .leftMenu .trackList {
-    display: none;
-  }
-
-  .leftMenu .playListContainer {
-    display: none;
-  }
-
+  .leftMenu .searchBox,
+  .leftMenu .trackList,
+  .leftMenu .playListContainer,
   .leftMenu .menuContainer ul li a span {
     display: none;
   }

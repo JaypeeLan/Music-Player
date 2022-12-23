@@ -4,7 +4,7 @@ import Track from "../assets/track.png";
 import { BsFillVolumeUpFill, BsMusicNoteList } from "react-icons/bs";
 import { FaDesktop } from "react-icons/fa";
 
-const TrackList = () => {
+const TrackList = ({ trackname, artistName }) => {
   return (
     <div className="trackList">
       <div className="top">

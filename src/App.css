@@ -1,9 +1,13 @@
 :root {
+  
   --dark-grey: #848484;
   --off-white: #f1f1f1;
   --light-green: #49e12e;
+
   --border-radius-large: 10px;
   --border-radius-small: 5px;
+
+  --small-fontSize: 12px;
 }
 
 * {
@@ -34,9 +38,14 @@
   background-size: cover;
   filter: grayscale(100);
   z-index: -1;
+  -webkit-filter: grayscale(100);
 }
 
 i,
 a {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
